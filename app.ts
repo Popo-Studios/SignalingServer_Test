@@ -305,7 +305,7 @@ class P2PSignalingServer {
 }
 
 // 서버 실행
-const server = new P2PSignalingServer(8080);
+const server = new P2PSignalingServer(parseInt(process.env.PORT ?? "8080"));
 
 // 상태 체크를 위한 간단한 로깅
 setInterval(() => {
