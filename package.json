@@ -1,0 +1,26 @@
+
+{
+  "name": "p2p-signaling-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "WebRTC P2P 시그널링 서버",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "node --loader ts-node/esm app.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": ["webrtc", "p2p", "signaling", "websocket"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/ws": "^8.5.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
